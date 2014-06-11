@@ -21,13 +21,11 @@ public class PreyLocation {
 	}
 
 	public PreyLocation(Location loc) {
-		if (loc!=null){
-			this.lat = loc.getLatitude();
-			this.lng = loc.getLongitude();
-			this.accuracy = loc.getAccuracy();
-			this.altitude = loc.getAltitude();
-			this.timestamp = System.currentTimeMillis();
-		}
+		this.lat = loc.getLatitude();
+		this.lng = loc.getLongitude();
+		this.accuracy = loc.getAccuracy();
+		this.altitude = loc.getAltitude();
+		this.timestamp = System.currentTimeMillis();
 	}
 
 	public double getLat() {
